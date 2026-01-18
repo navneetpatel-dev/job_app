@@ -1,5 +1,4 @@
 # docker compose up -d redis mongodb mysql postgres rabbitmq elasticsearch kibana to run in detached mode
-version: '3.9'
 services:
   redis:
     container_name: redis_container
@@ -95,6 +94,6 @@ services:
     volumes:
       - ./kibana.yaml/:/usr/share/kibana/config/kibana.yml:ro 
 
-  networks:
-    elastic:
-      name: elastic_network    
+networks:
+  elastic_network:
+    driver: bridge    
