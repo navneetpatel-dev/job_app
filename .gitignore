@@ -1,6 +1,9 @@
 # Docker volumes
 docker-volumes/
 
+# Node modules
+node_modules/
+
 # Environment files
 .env
 .env.local
