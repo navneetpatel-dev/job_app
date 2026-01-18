@@ -23,7 +23,6 @@ services:
     container_name: mysql_container
     image: mysql:9.5.0
     restart: always
-    command: --default-authentication-plugin=mysql_native_password
     environment:
       - MYSQL_USER=jobapp
       - MYSQL_DATABASE=jobapp
