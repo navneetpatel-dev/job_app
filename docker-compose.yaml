@@ -1,4 +1,5 @@
-version: '3.8'
+# docker compose up -d redis mongodb mysql postgres rabbitmq elasticsearch kibana to run in detached mode
+version: '3.9'
 services:
   redis:
     container_name: redis_container
@@ -10,7 +11,7 @@ services:
     volumes: 
       - ./docker-volumes/redis:/data
 
-  mongo:
+  mongodb:
     container_name: mongodb_container
     image: mongo:8.2.3
     restart: always
